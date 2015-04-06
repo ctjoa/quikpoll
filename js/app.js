@@ -390,6 +390,7 @@ function ShowQuestionForm() {
         $("#app").append('<div class="poll_answer" id="submitquestion'+i+'">'+letter+': ' + myDoc.poll['response'+i] + '</div>');
         $("#submitquestion"+i).fastClick(functionForResponse(i));
     }
+    addResponse();
     $("#app").append('<img src="images/EGG-2.png" class="omlet_second"></img>');
 }
 
